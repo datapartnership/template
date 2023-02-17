@@ -44,7 +44,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
     The <span style="color:#3EACAD">template</span> is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template); in other words, you can generate a new GitHub repository with the same files and folders to use as the starting point for your project.
 
-    > 🌟 [Create new repository from **template**](https://github.com/datapartnership/template/generate)
+    > 🌟 [Create new repository from **template**](https://github.com/worldbank/template/generate)
 
     ```{figure} docs/images/github-template.png
     ---
@@ -90,7 +90,7 @@ Please ensure you are logged in on [GitHub](https://github.com) and have permiss
 
       ```
       repository:
-      url: https://github.com/datapartnership/template
+      url: https://github.com/worldbank/template
       branch: main
       ```
 
