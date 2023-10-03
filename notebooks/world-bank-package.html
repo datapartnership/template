@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -35,11 +35,13 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -69,6 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="1. Indicators Example" href="world-bank-api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Oct 03, 2023"/>
   </head>
   
   
@@ -77,6 +80,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -155,6 +167,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Package Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nasa-apod.html">3. Securely Using API Keys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bibliography.html">4. Including Bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Gallery</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/gallery.html">Projects using the <span style="color:#3EACAD">template</span></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Templates</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../docs/CODE_OF_CONDUCT.html">Contributor Covenant Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING.html">CONTRIBUTING</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -334,10 +355,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -345,7 +366,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -393,7 +414,7 @@ document.write(`
 <section id="usage">
 <h2><span class="section-number">2.1. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
 <p>Unlike the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, where the source code was contained on the Jupyter notebok itself, we (re)use a Python package - the <a class="reference external" href="https://github.com/worldbank/template/tree/main/src/datalab">datalab</a> Python package - which will let us (re)use any attributes and methods in the following example.</p>
-<p>Let’s start by importing <code class="docutils literal notranslate"><span class="pre">WorldBankIndicatorsAPI</span></code>, a Pyhton API wrapper class created to faciliate the usage of the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a>.</p>
+<p>Let’s start by importing <code class="docutils literal notranslate"><span class="pre">WorldBankIndicatorsAPI</span></code>, a Python API wrapper class created to facilitate the usage of the <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation">World Bank Indicators API</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datalab.indicators</span> <span class="kn">import</span> <span class="n">WorldBankIndicatorsAPI</span>
@@ -443,7 +464,7 @@ query(indicator, country: list = &#39;all&#39;, params: dict = {}) method of dat
 </div>
 </div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">query</span></code> method allows us to select an <strong>indicator</strong> (e.g, <a class="reference external" href="https://datatopics.worldbank.org/world-development-indicators">World Development Indicators</a>), a list of countries and <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581#query-strings">query parameters</a>. Note that contrary to the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, the method expets a list of country names and converts them to <a class="reference external" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-3</a> automatically.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">query</span></code> method allows us to select an <strong>indicator</strong> (e.g, <a class="reference external" href="https://datatopics.worldbank.org/world-development-indicators">World Development Indicators</a>), a list of countries and <a class="reference external" href="https://datahelpdesk.worldbank.org/knowledgebase/articles/898581#query-strings">query parameters</a>. Note that contrary to the <a class="reference external" href="https://worldbank.github.io/template/notebooks/world-bank-api.html">previous example</a>, the method expects a list of country names and converts them to <a class="reference external" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-3</a> automatically.</p>
 <p>Let’s invoke the <code class="docutils literal notranslate"><span class="pre">query</span></code> method and retrieve the results for <code class="docutils literal notranslate"><span class="pre">SP.POP.TOTL</span></code> for the <a class="reference external" href="https://infobrics.org">BRICS</a> (as before).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -995,11 +1016,10 @@ if (force === true) {
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="world-bank-api.html"
@@ -1019,10 +1039,7 @@ if (force === true) {
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1053,7 +1070,7 @@ if (force === true) {
   <div class="footer-item">
     
 <p class="component-author">
-By World Bank
+By Development Data Group
 </p>
 
   </div>
@@ -1064,7 +1081,7 @@ By World Bank
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Jun 26, 2023.
+  Last updated on Oct 03, 2023.
   <br/>
 </p>
   </div>
@@ -1088,8 +1105,8 @@ By World Bank
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
