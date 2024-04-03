@@ -1,5 +1,9 @@
 # Project Template
 
+[![CalVer](https://img.shields.io/badge/calver-YY.0M.MICRO-22bfda.svg)](https://calver.org)
+[![GitHub Release](https://img.shields.io/github/v/release/worldbank/template)](https://github.com/worldbank/template/releases)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/worldbank/template/main.svg)](https://results.pre-commit.ci/latest/github/worldbank/template/main)
+
 The <span style="color:#3EACAD">template</span> is a standardized, but flexible *project* and *documentation* structure of folders and files for sharing your data science work.
 
 Inspired by [literate programming](http://literateprogramming.com), maintained by the [Development Data Group](https://www.worldbank.org/en/about/unit/unit-dec/dev) and built as [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), the <span style="color:#3EACAD">template</span> contains:
@@ -7,15 +11,18 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 - [**README**](README), [**CODE_OF_CONDUCT**](docs/CODE_OF_CONDUCT.md), [**CONTRIBUTING**](docs/CONTRIBUTING.md) templates
     > README files are important and often neglected. The files should inform anyone about the first steps to use, learn and contribute to your project.
 
-- **LICENSE**
+- [**CITATION.cff**](CITATION.cff)
+  > Embracing [CFF](https://citation-file-format.github.io) aligns with best practices for reproducible research and software development. By adhering to established standards for documenting project dependencies and citations, we demonstrate our commitment to quality, transparency, and integrity in our work.
+
+- [**LICENSE**](LICENSE)
   > The LICENSE is a document that  determines what others can and cannot do with contents of the repository. If no license is present, no one has permission to use and/or modify your code. The <span style="color:#3EACAD">template</span> is licensed under the [**Mozilla Public License**](https://www.mozilla.org/en-US/MPL/). And so will projects generated from it.
 
 - **docs/**
 
     > Documentation is often never prioritized until last minute. The <span style="color:#3EACAD">template</span> aims to revert the malpractice by setting up the documentation as an integral part, inspired by [literate programming](http://literateprogramming.com). With the power of [Jupyter Book](https://jupyterbook.org), data practitioners have a way to share [Jupyter notebooks](https://jupyter.org) on [GitHub Pages](https://pages.github.com) in a standardized and effortless way.
 
-- **docs/bibliography.bib**
-    > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format.
+- [**docs/bibliography.bib**](/docs/bibliography.bib)
+    > A `bibliography` using the [BibTeX](https://www.bibtex.org/Format/) format. Use this file to include and cite your project's bibliography. See also [Citations and bibliographies](https://jupyterbook.org/en/stable/content/citations.html).
 
 - **data/**
     > Placeholder folder for data. Data is immutable. By default, the data folder is present but ignored from version control, in order to prevent files of being mistakenly versioned in the code repository.
@@ -26,7 +33,13 @@ Inspired by [literate programming](http://literateprogramming.com), maintained b
 - **notebooks/**
     > Placeholder folder for [Jupyter notebooks](https://jupyter.org). Markdown files and Jupyter notebooks can be added to `docs/_toc.yml` (Table of Contents) to compose the *documentation*.
 
-- [Issues and Pull Requests GitHub templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+- **.pre-commit-config.yml**
+    > Using [pre-commit](https://pre-commit.com) offers a significant advantage in streamlining the development process by enforcing code standards and reducing errors before code reaches the review stage or is committed to the repository. It automates the execution of various checks, such as syntax errors, code formatting, and ensuring compliance with coding standards, which saves time and improves code quality.
+
+- [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot)
+    > [GitHub Actions](https://github.com/features/actions) and [Dependabot](https://docs.github.com/en/code-security/dependabot) are two powerful features provided by [GitHub](https://github.com) to automate and secure software development workflows, making it easier for developers to maintain high-quality and safe codebases.
+
+- [GitHub Issues and Pull Requests GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
     > GitHub allows to customize how issues and pull requests are presented to the public. Custom templates encourage collaboration and maintainability.
 
 ```{important}
